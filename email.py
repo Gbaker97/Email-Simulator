@@ -49,7 +49,8 @@ while True:
     user_choice = int(input('''\nWould you like to:
     1. Read an email
     2. View unread emails
-    3. Quit application
+    3. View all emails
+    4. Quit application
 
     Enter selection: '''))
        
@@ -71,8 +72,11 @@ while True:
                 unread_emails.append(email)
         
         list_emails(unread_emails)
+    
+    elif user_choice == 3:        
+        list_emails(inbox)
             
-    elif user_choice == 3:
+    elif user_choice == 4:
         print("Email inbox is closing...")
         break
 
