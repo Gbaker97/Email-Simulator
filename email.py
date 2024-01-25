@@ -41,7 +41,7 @@ def read_email(index):
     disp_str += f"Contents:\t{email.content}\n"
     print(disp_str)
 
-    email.has_been_read = True
+    email.mark_as_read()
 
 # --- Email Program --- #
 
